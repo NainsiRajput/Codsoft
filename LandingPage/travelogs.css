@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI Semib','Tahoma','Arial';
+
+}
+.showcase{
+    width:100%;
+    height:100vh;
+    background-image: url("travel11.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar.logo{
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    color: black;
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navbar ul li{
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background: #5b4e4e;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+#title1{
+    font-size: 80px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+}
+.navbar ul li:hover ::after {
+width:100%;
+}
+/* 
+#title1 ul li::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background: #f4f4f4;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+#title1 ul li::after {
+    width:100%;
+    } */
+
+.showcase-content{
+   width:900px;
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    align-items: center;/*optional*/
+    text-align: center;
+}
+.showcase-content h1{
+    font-size: 40px;
+    margin-top: 80px;
+}
+.showcase-content p{
+    margin: 20px auto;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.btn{
+   display: inline-block;
+   padding:10px 0;
+   margin: 20px 10px;
+   border : 2px  solid black;
+   color:black;
+   font-weight: bold;
+   width:200px;
+   border-radius:25px;
+   text-decoration: none;
+   text-align: center;
+   background: transparent;
+   overflow: hidden;
+   cursor:pointer;
+transition: 0.5s;
+}
+.btn:hover{
+    background: black;
+    color: white;
+}
+.showcase-social ul{
+    margin-left: 100px;
+    position: absolute;
+    bottom: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.showcase-social ul li{
+    list-style: none;
+}
+.showcase-social ul li img{
+    width:50px;
+}
+.showcase-social a{
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+.showcase-social a:hover{
+    transform: scale(0.5) translateY(-15px);
+
+}
+@media (max-width:992px){
+    .navbar .logo{
+        font-size: 14px;
+
+    }
+    .navbar {
+        width:90%;
+        margin:auto;
+        padding: 20px 0px;
+    }
+    .navbar ul li{
+        font-size: 14px;
+        margin-left: -5px;
+    }
+    .showcase-content h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .showcase-content p{
+        font-size: 14px;
+
+    }
+    .btn {
+        width:150px;
+        font-size: 12px;
+    }
+    .showcase-social ul li img{
+        width: 35px;
+    }
+}
+
+@media(max-width : 576px){
+    .navbar .logo{
+        font-size: 10px;
+
+    }
+    .navbar {
+        width:98%;
+        margin:auto;
+        padding: 12px 0px;
+    }
+    .navbar ul li{
+        font-size: 10px;
+        margin-left: -5px;
+    }
+    .showcase-content h1{
+        font-size: 20px;
+       
+    }
+    .showcase-content p{
+        font-size: 10px;
+
+    }
+   
+    .showcase-social ul li img{
+        width: 25px;
+    }
+}
+.our-services{
+    padding:2rem 7%;
+}
+.our-services h1{
+ color: black;
+ font-size: 40px;
+ text-align: center;
+}
+.our-services h1 span{
+    color: blue;
+}
+.main-services{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap : 15px;
+    flex-wrap: wrap;
+}
+.main-services .inner-services {
+    flex: 1 1 200px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.inner-icons{
+    width: 40%; 
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.inner-services h2{
+    font-size: 2rem;
+    color:black;
+    padding-top: 70px;
+    text-align:left;
+    align-items: center;
+}
+.inner-services h2 span{
+    color:rgb(4, 86, 4);
+}
+.inner-services p{
+   color:rgb(52, 2, 2);
+   font-size: 15px; 
+   padding-top: 30px;
+   text-align:left;
+   width:500px;
+   
+
+}
+#coorgimg{
+    width: 35%;
+    height: auto; 
+    max-height: 230px; 
+    object-fit: cover;
+
+}
+
+.recommended-destinaton{
+    padding: 3rem 7%;
+
+}
+.recommended-destinaton h1{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+}
+.recommended-destinaton h1 span{
+    color: rgb(5, 45, 110);
+}
+.recommended-destinaton h1 span:hover{
+    letter-spacing: 4px;
+}
+.main-destination{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.main-destination .inner-destination img {
+    width: 50%; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover; 
+}
+.main-destination .inner-destination{
+    flex: 200px;
+}
+.main-destination .inner-destination .main-image img{
+    width: 300px;
+    height:200px;
+
+}
+.inner-destination h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+
+}
+
+.inner-destination p {
+    font-size: 1rem; 
+   
+     
+}
+
+.dis-icon{
+    width: 2rem;
+    display: flex; 
+    gap: 0.4rem;
+}
+
+.our-blogs{
+    padding:3rem 7%;
+    
+}
+.our-blogs h1{
+    color: black;
+    font-size:40px;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.our-blogs h1 span{
+    color: blue;
+
+}
+.our-blogs h1 span:hover{
+    letter-spacing: 2px;
+}
+
+.main-blog{
+    display: flex;
+    justify-content: flex-start; 
+    gap: 20px;
+    flex-wrap: wrap ;
+    
+}
+
+.inner-blog{
+    flex: 1 1 300px;
+    max-height: 800px;
+}
+
+.inner-blog img{
+    width: 100%;
+    
+}
+

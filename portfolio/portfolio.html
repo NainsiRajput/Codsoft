@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id= "header">
+<div class="container">
+    <nav>
+        <img src="Nainsi.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#heading-service">Services</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        
+        <h1> Hi, I am <span>Nainsi Kumari </span></h1>
+        <h3> ( WebDeveloper and Ui designer)</h3>
+        <br>
+        <h5>"Welcome to a World of Design and Development Fusion"</h5>
+        <h5>"Transforming Ideas into Interactive Realities"</h5>
+        
+    </div>
+</div>
+    </div>
+<!-- ----------ABOUT-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Newimgg.jpg" >
+                </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hello! I'm Nainsi Kumari, a dedicated Frontend Web Developer and UI/UX Designer currently studying at Maharishi Markandeshwar (Deemed to be University), Mullana. As a second-year student, I am passionate about creating visually appealing and user-friendly web interfaces.
+                </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links" onclick="opentab('experience')"> Achievements </p>
+                    <p class="tab-links" onclick="opentab('education')"> Education </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span> <br>UI designing</li>
+                        <li><span>Database</span><br>PostgreSQL</li>
+                        <li><span>Languages</span><br>Javascript , C</li>
+                        <li><span>Skill</span><br>React</li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span> Secured 5th position in Poornima Hackathon <br></li>
+                        <li><span>2023</span><br>Participated in Robbo Racing Car</li>
+                        <li><span>2024</span><br>Participated in Internal smart india Hackathon</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span> <br>10th with 88.88%</li>
+                        <li><span>2022</span><br>12th with 78% </li>
+                        <li><span>2024</span><br>Currently pursuing B.Tech CSE from MMDU , Mullana</li>
+                    </ul>
+                </div>
+
+                
+            </div>            
+        </div>
+    </div>
+
+    <div>
+        <div>
+        </div>
+    </div>
+
+    <!--services--> 
+
+    <div id="heading-service" class="heading-service">Services</div>
+    <div class="services-container">
+       
+        <div class="service-box">
+            <div class="icon">💻</div>
+            <h3>Web Design</h3>
+            <p> Proficient in HTML, CSS, and JavaScript, I craft visually stunning and responsive web interfaces with a focus on user experience, 
+                creating intuitive layouts that enhance usability and engagement. Skilled in leveraging frameworks like React to build dynamic and interactive web applications,
+                 I am experienced in implementing modern design principles to create aesthetically pleasing designs. Knowledgeable in UI/UX best practices, I ensure designs are both visually appealing and functional, 
+                 capable of translating client requirements into captivating design concepts and prototypes. Dedicated to staying updated with the latest trends and technologies in web design, I deliver cutting-edge solutions that meet the evolving needs of users and businesses alike.
+            </p>
+            <a href="#"></a>
+        </div>
+        <div class="service-box">
+            <div class="icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Proficient in UI design, I specialize in crafting visually appealing interfaces solely on Figma. Prioritizing user experience and usability, I create captivating designs that resonate with users. 
+                Translating design concepts into interactive prototypes, I ensure seamless transitions from ideas to reality. With expertise in wireframing and prototyping, I visualize and refine designs to perfection. 
+                Dedicated to creating user-centric interfaces aligned with brand identity, I conduct meticulous user research to inform design decisions. Knowledgeable in design principles like typography and color theory, 
+                I optimize designs for accessibility across various devices. Passionate about leveraging design to drive engagement and retention, I am committed to making impactful user experiences through Figma.</p>
+            <a href="#"></a>
+        </div>
+        <div class="service-box">
+            <div class="icon">📱</div>
+            <h3>Database </h3>
+            <p>With a foundational understanding of SQL, I am poised to incorporate database management into website development projects. As I continue to expand my SQL skills,
+                 I anticipate seamlessly integrating database functionalities into web applications to enhance their functionality and performance. Through practical application and ongoing learning, 
+                 I aim to leverage SQL effectively to optimize data storage and retrieval, contributing to the seamless operation of websites and the delivery of exceptional user experiences.
+            <a href="#"></a>
+        </div>
+    </div>
+
+    <!-- contact me -->
+    <div id="contact-section" class="contact-section">
+        <div class="contact-info">
+            <h1>Contact Me</h1>
+            <div class="contact-details">
+                <div class="detail">
+                    <span class="icon">✉️</span>
+                    <a href="kumarinainsi0703@gmail.com">kumarinainsi0703@gmail.com</a>
+                </div>
+                <div class="detail">
+                    <span class="icon">📞</span>
+                    <a href="tel:8360165080">8360165080</a>
+                </div>
+            </div>
+           
+            <!-- <button class="download-cv"><a href="Resume.pdf" download>Download CV</a></button> -->
+            <a href="Resume.pdf" download class="download-cv">Download CV</a>
+
+        </div>
+        <div class="contact-form">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>
+        @ 2024 
+    </p>
+    </footer>
+
+</div>
+
+
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+    
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab"); // Corrected variable name
+        }
+    
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+</body>
+</html>
+
+
+
+
